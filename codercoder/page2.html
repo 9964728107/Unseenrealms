@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Second Page</title>
+    <link rel="stylesheet" href="styles/responsiveness.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/Stylepg2.css">
+    <!--icons--><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="flex flex-jc-sb container">
+          
+            <a href="/">
+            <div class="image"><h4 class="image" alt="logo" class="header__logo">Unseen realms</h4>
+            </a></div>
+           
+             <div id="btnHamburger" class="header__menu">
+             
+               <span class="span1"></span>
+               <span class="span2"></span>
+               <span class="span3"></span></div>
+             </a> 
+             <div class="header__link">
+             <a href="index.html" class="link" style="position: relative;">Home</a>
+             <a href="http://" class="link"style="position: relative;">Contact Us</a>
+             <a href="http://" class="link"style="position: relative;">About</a>
+             </div> 
+           <div class="button_case"> <button class="button">Share</button> 
+          </div>
+          <div class="headerdec"></div>
+         </nav>
+             <div class=" header__menu_mbl">
+               <a href="" class="link_mbl">Home</a>
+               <a href="" class="link_mbl">About</a>
+               <a href="" class="link_mbl">Contact us</a>
+               <a href="" class="link_mbl">Share</a>
+               
+        </div>
+    </header>
+            
+        <div class="mainbg">
+                <h5>Kudumari Falls</h5>
+               <div class="details"> <p>&#8226;Falls. aproxx location lorem epsum</p>
+                <p>(Golden time to travel: &#8226;Raint season)</p></div>
+               
+               <!--map feature-->
+               <div class="map">
+                
+                   <img src="/images/map.png" class="map" alt="" srcset="">
+                   <div class="button_map"> <button class="map_button">Find in map</button>
+                   </div>
+               </div>
+
+
+
+                 <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                 <div class="mySlides fade">
+                     <div class="numbertext">1 / 3</div>
+                          <img class="image" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/fb/b4/d9/kudumari-falls.jpg?w=1200&h=-1&s=1" style="display:block; height: 300px; margin-left: auto; margin-right: auto;">
+                      <div class="text">Caption Text</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                             <img class="image" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/fb/b4/dc/kudumari-falls.jpg?w=1100&h=-1&s=1" style="display:block;height: 300px; margin-left: auto; margin-right: auto;">
+                            <div class="text">Caption Two</div>
+                  </div>
+
+                  <div class="mySlides fade">
+                              <div class="numbertext">3 / 3</div>
+                                     <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmrHeXJZ1SBBNQ4P_ElW-tRy0uGqrs1GOcg&usqp=CAU" style="display:block;height: 300px; margin-left: auto; margin-right: auto;">
+                               <div class="text">Caption Three</div>
+                    </div>
+                  
+                   <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                   <br>
+
+                   <!-- The dots/circles -->
+                  <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span>
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span>
+                     </div>
+
+
+     
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+
+function myMap() {
+var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+        
+            
+        <!--Main Content-->
+         <div class="content">
+            <h5>About the place</h5>
+            <p>
+                As the waterfall is situated deep inside the forest, one needs to take a walk into the forest to witness the beauty. The spellbound beauty of the dense forest can be perceived as one moves along the path through the luscious greenery. The thick forests is an easy way to the waterfall.
+             <br><br><br>
+               The waterfall can also be reached on an alternate route. The base of the waterfall is accessible by trekking along the stream. The route is approachable from the coastline. The route is safe during the post monsoon season. During monsoon season, the water level is quite high and hence the route is less traversed.
+             <br><br><br>
+                The trekking through the dense forest is truly enthralling. The walk around 4km distance through the dense forests of western Ghats keeps you enticed all along. The trekking covers all kind of rocky terrain. It would an adventurous and thrilling experience for any avid trekkers. The walk through the rocks and boulders towards the cascading waterfall is quite dangerous, yet magnificent. The waterfall looks like strips of silver amidst the bright green envelope of luscious green trees.
+
+
+</div>
+
+
+
+            </p>
+         </div>
+
+             
+
+
+
+
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="waves">
+              <div class="wave" id="wave1"></div>
+              <div class="wave" id="wave2"></div>
+              <div class="wave" id="wave3"></div>
+              <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="/index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+          
+            </ul>
+            <p>&copy;2023 @Unseen Realms | All Rights Reserved</p>
+          </footer>
+          
+          
+    
+    <script src="/javascript.js"></script>
+</body>
+</html>

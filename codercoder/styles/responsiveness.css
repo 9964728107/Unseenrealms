@@ -1,0 +1,599 @@
+
+@import "/animations.css";
+  
+@media screen and (min-width: 0px) and (max-width: 450px) /*MOBILE VERSION*/
+{
+  body{
+    font-size: 1.rem;/*18px   18/16*/
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    font-family: 'public sans',sans-serif;
+    color:  hsl(233, 8%, 62%);
+    font-weight: 300;}
+  
+  
+  /*Navigation css for mobile version*/
+  .button_case{display: none;}
+  .header__link{display: none;}
+  .header__menu{
+    display:inline-block;
+    position: absolute;
+    padding-bottom: 10px;
+    left: 87%;
+    top: 25px;           
+  }
+
+  nav{ 
+    padding-right:1.0625;
+    padding-left: 1.0625;
+    padding-top: 0rem;
+    position: relative;
+    background-color: hsl(0, 0%, 100%);
+    
+  }
+  
+  .image{
+   display: inline-block;
+    font-size: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+    left: -35px;  
+  }
+ .headerdec{
+  position: absolute;
+  height: 2px;
+  width: 100vw;
+  background-image: linear-gradient(to right,hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+  left: 0px;
+ }
+
+
+
+
+
+
+
+/*HERO SECTION (the one with quote and image)*/
+  .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+    padding-top: 10px;
+    
+  }
+  .hero{
+    text-align: center;
+    background-color: azure;
+    height: 330px;
+   
+  }
+
+  .hero__image{
+   flex: 100%;
+   position: relative;
+   align-content: center;
+   
+  }
+  .image__hero{
+   
+    flex: 100%;
+    width: 83%;
+    border-radius:7px;
+    border-radius: 7px;
+    padding-top: 15px;
+  z-index: 0;
+}
+  
+ 
+  .hero__text{
+    font-size: 50%;
+    flex: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero__text{
+    padding-top: 10px;
+    color: hsl(233, 26%, 24%);
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Public Sans', sans-serif;
+  font-family: 'Shantell Sans', cursive;
+  }
+
+
+
+/*FEATURE section(with all places divission)*/
+.feature__grid{
+  display: flex;
+  flex-direction: column;/*aligning elements column wie...i.e vertically*/
+  align-items: flex-start;
+  width:100%;
+}
+.feature__titleM{
+  text-align:center;
+  color: hsl(233, 26%, 24%);
+  font-size: 140%;
+  
+ }
+ .feature__title,.feature__description,h5,li{
+  font-size: 90%;
+ }
+ .feature__description{
+  font-size: 75%;
+ }
+ .feature__item{
+  padding-top: 1.8rem;
+ }
+ 
+ .ullist{
+  display: block;
+  float: right;
+  padding-right:30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  
+}
+.feature__description{
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.feature__title{
+  text-align: center;
+  padding-bottom: 35px;
+
+}
+.nature3{
+  display: none;
+  float: left;
+  position: relative;
+  left: 30px;
+  padding-left: 30px;
+ 
+}
+
+.nature1{
+  display: none;
+  float: left;
+  position: absolute;
+  left: 70px;
+}
+.nature2 img{
+ /* display:inline-block;
+  position:relative;
+  top: 40px;
+  right: -43px;
+   /*1575 for chrome 1415 for edge*/
+   display: block;
+   margin: auto;
+   width: 250px;
+   border-radius:0px ;
+  
+}
+.ullist{
+  padding-top: 0px;
+}
+.benifit__image{
+  padding: 0;
+  height: 50%;
+}
+
+/*hamburger animation animation for the 3 menu line*/
+
+.span1,.span2,.span3{
+  display: block;
+  background-color: black;
+  height: 2px;
+  width: 26px;
+  transition: all 300ms ease-in-out;
+  transform-origin:3px 1px;
+}
+span:not(:last-child){ margin-bottom: 5px;}
+
+
+/*forming X from those three menu lines*/
+ .open> span:first-child{
+  transform: rotate(45deg);
+
+ }
+ .open>span:nth-child(2){
+  opacity: 0;
+  
+ }
+ .open>span:last-child{
+  transform: rotate(-45deg);
+  
+ }
+ /*styling an background when menu option is pressed:
+ when the below class is added to overlay...it will get the following style...its added with help of java
+ script...i.e when menu is clicked*/
+ .overlay__open{
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0px;
+  bottom: 0;
+  background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+ }
+
+ .overlay__default /*condition when menu bar is not pressed: we will add 
+                   this so that bg looks normal when website starts*/
+ {
+  position: fixed;
+  right: 0;
+  left: 0; 
+  top: 0px;
+  bottom: 0;
+  background-image: linear-gradient(hsl(233, 26%, 24%), transparent);
+ }
+
+
+ .header__menu_mbl{  /*the menu box default stylr...i.e it should be invisible when menu not pressed*/
+  visibility: hidden;
+  padding: 1.625rem;
+  background-color:  hsl(0, 0%, 100%);
+  margin-top: 24px;
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 5px;
+ }
+ 
+ 
+ .header__menu_mbl_open /*menu block willbe visible...
+                         this style is added if the class is added to the .header_menu_menu*/
+ {
+  display: block;
+  visibility: visible;
+  background-color:  hsl(0, 0%, 100%);
+  padding: 1.625rem;
+  margin-top: 24px;
+  position: absolute;
+  width: calc(100% - 3rem);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 5px;
+  
+ }
+
+.link_mbl /* styling the menu block texts*/
+{
+  color: hsl(233, 26%, 24%);
+  text-decoration: none;
+  padding: 0.625rem; /*10px/16*/
+  display: block;
+  text-align: center;
+}
+.container{
+  padding: 0 1.5rem;
+ }
+ .no_scroll{        
+  overflow: hidden;
+ }
+
+
+ .Nagaimg img{
+  width: 320px;
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 25px;
+
+
+ }
+
+
+ .research_papers>ol>a:hover{
+  color: black !important;
+  text-decoration: underline;
+  transition: 0.4s ease-in-out;
+  
+}
+ 
+ .research_papers>ol>li:hover{
+  color:hsl(233, 8%, 62%) ;
+  transition: 0.4s ease-in-out;
+  line-height: 200%;
+  text-decoration: none;
+  
+ }
+ .research_papers>ol>li{
+  color: black !important;
+  text-decoration:underline;
+  transition: 0.4s ease-in-out;
+  line-height: 200%;
+ }
+ ol{
+  
+  display: block;
+  margin: auto;
+ }
+
+ a:hover{
+  text-decoration: none;
+  color:hsl(233, 8%, 62%);}
+
+a{
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.menu__items{
+  flex: 1;
+  
+}
+footer{
+  height: 400px;
+}
+
+
+
+/*intermediate page responsiveness*/
+
+.full{
+  display: flex;
+  flex-direction: column;
+}
+.div1,.div2{
+  flex: 1;
+margin: auto;
+  
+  
+}
+.div2 img{
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: -20px;
+  display: block;
+  margin: auto;
+  padding: none;
+  margin-left: 0px;
+  height: 140px;
+}
+.div1 img{
+  width: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: -20px;
+  display: block;
+  margin: auto;
+  padding: none;
+  margin-left: 0px;
+  height: 140px;
+
+}
+
+.place1,.place2,.place3,.place4,.place4,.place5,.place6{
+  background-color: aliceblue;
+  max-width: 200px ;
+  border-radius: 5px;
+  box-shadow: 18px 17px 17px rgb(54, 53, 53) ;
+  margin:px;
+ flex: 1;
+ transition: 0.8s ease;
+ display: block;
+ margin: auto;
+ margin-top: 150px;
+  
+}}
+/**************************************************************************************************
+***************************************************************************************************************/
+
+
+@media screen and (min-width: 451px) and (max-width: 1600px){
+  body{
+    font-size: 1.125rem;/*18px   18/16*/
+    padding: 0;
+    margin: 0;
+    line-height: 1.3;
+    font-family: 'public sans',sans-serif;
+    color:  hsl(233, 8%, 62%);
+    font-weight: 300;}
+   
+  .button_case{display: block;}
+  .header__menu{display:none;}
+  .image__hero{
+    max-width: 30rem;    max-width: 30rem;
+    border-radius: 15px;
+    float: right;
+    margin: 50px;
+  }
+  .hero__text{
+    padding-top: 75px;
+    color: hsl(233, 26%, 24%);
+    padding-right: 900px;
+    padding-left: 100px;
+    font-family: 'Public Sans', sans-serif;
+  font-family: 'Shantell Sans', cursive;
+  }
+  .hero__text>p{
+    font-size:90% ;
+  }
+  nav{
+
+    padding-right:1.0625;
+    padding-left: 1.0625;
+    padding-top: 1.1rem;
+    position: fixed; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 100%; /* Full width */
+    transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+    background-color: aliceblue;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.08), 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+    z-index: 1;
+  }
+  .header__link{
+    display: inline-block;
+    position: absolute;
+     left: 43%;
+    color:  hsl(233, 8%, 62%);
+    top:30px;
+  }
+  .link:not(:last-child){
+    margin-right: 80px;
+  }
+  .hero{
+    text-align: center;
+    background-color: azure;
+    height: 595px;
+    padding-top: 95px;
+   
+  }
+  .ullist{
+    display: block;
+    float: right;
+    padding-right:170px;
+    padding-bottom: 20px;
+  }
+  .benefit__image{
+    padding-top: 100px;
+  max-height: 100%;
+  }
+  .feature__description{
+    text-align:left;
+    padding-top: 28px;
+    padding-left: 15px;
+  
+  }
+  .feature__titleM{
+    text-align:center;
+    color: hsl(233, 26%, 24%);
+   }
+   .feature__title{
+    text-align: center;
+    padding-bottom: 40px;
+  
+  }
+  .nature3{
+    display: block;
+    float: left;
+    position: relative;
+    left: 30px;
+    padding-left: 30px;
+    
+    
+  }
+  
+  .nature1{
+    display: block;
+    float: left;
+    position: absolute;
+    left: 270px;
+  }
+  .nature2{
+    display:inline-block;
+   
+    position:relative;
+    top: 185px;
+    right: -43px;
+     /*1575 for chrome 1415 for edge*/
+   
+    
+  }
+  .header__menu__mbl{
+    display: none;
+   
+  }
+  .link_mbl{
+    display: none;
+   
+  }
+  /*Css for the second page(for elements which are differant from homepage)*/
+ .mainbg{
+  background-color: azure;
+  height: 100%;
+  width: 100%;
+ }
+
+ .Nagaimg{
+
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0px 0px 5px 5px rgb(117, 114, 114);
+  width: fit-content;
+  margin-right: 50px;
+  float: right;
+  margin-top: 80px;
+  margin-bottom: 90px;
+  background-image: url(https://img.freepik.com/free-photo/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267.jpg?w=2000);
+  
+ 
+ }
+ footer{
+  position: fixed;
+  bottom: 0;
+ }
+ a{
+  text-decoration: none;
+  color:hsl(233, 8%, 62%);}
+
+a:hover{
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+.research_papers>ol>a:hover{
+  color: black !important;
+  text-decoration: underline;
+  transition: 0.4s ease-in-out;
+  
+}
+ 
+ .research_papers>ol>li{
+  color:hsl(233, 8%, 62%) ;
+  transition: 0.4s ease-in-out;
+  line-height: 200%;
+  
+ }
+ .research_papers>ol>li:hover{
+  color: black !important;
+  text-decoration:underline;
+  transition: 0.4s ease-in-out;
+  line-height: 200%;
+ }
+ ol{
+  margin-left: 27px;
+ }
+
+ .Nagaimg img{
+  height:300px
+ }
+  .div1 img, .div2 img{
+           width: 300px; 
+           height: 220px;
+           border-top-left-radius: 5px;
+           border-top-right-radius: 5px;
+           margin-top: -20px;
+        }
+        .place1,.place2,.place3,.place4,.place4,.place5,.place6{
+            background-color: aliceblue;
+            width: 300px ;
+            border-radius: 5px;
+            box-shadow: 18px 17px 17px rgb(54, 53, 53) ;
+            margin: 156px;
+           flex: 1;
+           transition: 0.8s ease;
+            
+        }
+
+
+
+
+
+
+}
+
+
+
+
