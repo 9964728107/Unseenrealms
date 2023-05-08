@@ -1,8 +1,218 @@
 /*Icon*/
 
+@media screen and (min-width: 0px) and (max-width: 450px) /*MOBILE VERSION*/
+{
+  
+.mainbg{
+  display: flex;
+  flex-direction: column;
+  font-size: 65%;
+  padding: 55px 5px;
+}
+ 
 
-
+.details,.map,.slideshow-container,.content{
+  display: block;
+  flex: 1;
+}
 .Back{
+  position: absolute;
+  left: 23%;
+  top: 100px;
+  width: 3%;
+}
+
+.Forward{
+  position: absolute;
+  right: 22%;
+  top: 100px;
+  width: 3%;
+}
+
+h5{
+  font-weight: 600;
+  
+  color: black;
+  padding-left: 10px;
+  margin-top:20px;
+  font-size: 170%;
+}
+.details{
+  font-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 25px;
+  margin-top: 0px;
+  color: #353232;
+  text-align: left;
+}
+.map{
+  height: 60px;
+  width: 110px;
+  display: inline-block;
+  position:absolute;
+  top: 57px;
+  right: 13px;
+  border-radius: 5px;
+}
+.map_button{
+  position: absolute;
+  padding: 7px 8px;
+  top: 70px;
+  right: 21px;
+ cursor: pointer;
+ border-radius: 10px;
+background-color: rgb(10, 100, 173);
+ border: none ;
+ color: hsl(0, 0%, 100%);
+ font-weight: 200;
+
+}
+.map_button>p{
+  font-size: 70%;
+}
+
+
+.map_button:hover{
+  position: absolute;
+  padding: 7px 8px;
+  top: 70px;
+  right: 21px;
+  cursor: pointer;
+ border-radius: 10px;
+background-color:  rgb(10, 121, 211);
+ border: none ;
+ color: hsl(0, 0%, 100%);
+ font-weight: 200;
+ transition: ease-in-out 0.15s;
+
+}
+
+.mySlides>img{
+  max-width: 100% !important;
+  height: 310px !important;
+  z-index: 0 !important;
+ 
+  
+}
+/*styles for multiple image movement*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  width: 300px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px;
+  
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  background-color: rgb(9, 8, 8);
+  border-radius: 10px;
+   
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 50%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+h5{
+  font-weight: 600;
+  font-size:1.4rem;
+  color: black;
+  padding-left: 23px;
+  margin-top:40px;
+  font-size: 190%;
+}
+.content>p{
+  font-size: 150%;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+}
+
+
+
+/***************************************************************************************************************************************/
+
+@media screen and (min-width: 451px) and (max-width: 1600px){
+  .Back{
     position: absolute;
     left: 23%;
     top: 400px;
@@ -27,11 +237,11 @@
 .mainbg{
     font-size: 65%;
     padding: 10px 10px;
-    padding-top: 100px;
+    margin-top: 100px;
 }
 
 .details{
-    font-size: 100%;
+    font-size: 170%;
     padding-left: 50px;
     margin: 25px;
     color: #353232;
@@ -47,7 +257,16 @@ h5{
     margin-top:40px;
     font-size: 170%;
 }
-
+.map{
+  height: 80px;
+  width: 157px;
+  display: inline-block;
+ 
+  position: relative;
+  top: -60px;
+  right: 70px;
+  border-radius: 5px;
+}
 
 
 
@@ -73,6 +292,7 @@ h5{
   border-radius: 10px;
    
 }
+
 
 /* Next & previous buttons */
 .prev, .next {
@@ -208,5 +428,4 @@ background-color:  rgb(10, 121, 211);
 .content>p{
   font-size: 150%;
   padding-top: 25px;
-}
-
+}}
