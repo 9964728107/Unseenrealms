@@ -410,6 +410,7 @@ margin: auto;
   display: block;
   margin-left: auto !important;
   margin-right: auto !important;
+  margin-left:0px;
 }
 .body{
   padding-top: 30px;
