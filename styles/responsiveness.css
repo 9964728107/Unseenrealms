@@ -74,7 +74,13 @@
    flex: 100%;
    position: relative;
    align-content: center;
+   border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
    
+  }
+  footer>a{
+   
+    line-height: 1.8 !important;
   }
   .image__hero{
    
@@ -84,6 +90,8 @@
     border-radius: 7px;
     padding-top: 15px;
   z-index: 0;
+   border-top-right-radius: 7px;
+   border-top-left-radius: 7px;
 }
   
  
@@ -145,6 +153,9 @@
   padding-bottom: 35px;
 
 }
+.features{
+  padding-top: 3rem;
+}
 .nature3{
   display: none;
   float: left;
@@ -170,6 +181,7 @@
    margin: auto;
    width: 250px;
    border-radius:0px ;
+   margin-top: 90px;
   
 }
 .ullist{
@@ -335,6 +347,10 @@ a{
 }
 footer{
   height: 400px;
+  line-height: 2;
+}
+footer>.menu{
+  padding-left: 0px;
 }
 
 
@@ -344,6 +360,7 @@ footer{
 .full{
   display: flex;
   flex-direction: column;
+  padding-bottom: 30px;
 }
 .div1,.div2{
   flex: 1;
@@ -387,7 +404,20 @@ margin: auto;
  margin: auto;
  margin-top: 150px;
   
-}}
+}
+
+.body>h3{
+  display: block;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+.body{
+  padding-top: 30px;
+}
+
+
+
+}
 /**************************************************************************************************
 ***************************************************************************************************************/
 

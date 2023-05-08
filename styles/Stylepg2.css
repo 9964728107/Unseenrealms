@@ -42,7 +42,7 @@ h5{
   margin-left: auto;
   margin-right: auto;
   margin: 25px;
-  margin-top: 50px;
+  margin-top: 0px;
   color: #353232;
   text-align: left;
 }
@@ -196,8 +196,9 @@ h5{
   font-size:1.4rem;
   color: black;
   padding-left: 23px;
-  margin-top:40px;
+  margin-top:60px;
   font-size: 190%;
+  margin-bottom: 0px;
 }
 .content>p{
   font-size: 150%;
@@ -238,6 +239,7 @@ h5{
     font-size: 65%;
     padding: 10px 10px;
     padding-top: 100px;
+    
 }
 
 .details{
