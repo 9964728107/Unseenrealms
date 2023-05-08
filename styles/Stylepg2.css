@@ -237,11 +237,11 @@ h5{
 .mainbg{
     font-size: 65%;
     padding: 10px 10px;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 .details{
-    font-size: 170%;
+    font-size: 130%;
     padding-left: 50px;
     margin: 25px;
     color: #353232;
